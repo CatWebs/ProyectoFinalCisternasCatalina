@@ -1,0 +1,95 @@
+#radio_main{
+    background: linear-gradient(to bottom, map-get($colores, color-fondo), map-get($colores, color-secundario), map-get($colores, color-fondo));
+    color: map-get($colores, color-texto-light);
+    padding: 40px 20px;
+    border-top: 3px solid map-get($colores, color-texto-light);
+    text-align: center;
+    h1{
+        text-shadow: 3px 4px 7px map-get($colores, color-texto-dark);
+        margin: 20px auto;
+    }
+    h2{
+        font-weight: bolder;
+        margin-top: 30px;
+    }
+    h3{
+        text-shadow: 3px 4px 7px map-get($colores, color-principal);
+    }
+    h4{
+        margin-bottom: 30px;
+        color: map-get($colores, color-texto-dark);
+        text-shadow: 3px 4px 7px map-get($colores, color-texto-light);
+        a{
+            text-decoration: none;
+            color: map-get($colores, color-texto-dark);
+            font-weight: bolder;
+            &:hover{
+                color: map-get($colores, color-rosa);
+            }
+        }
+    }
+    .player{
+        background-color: map-get($colores, color-fondo);
+        border: 1px solid map-get($colores, color-secundario);
+        margin: 0 auto;
+        max-width: 1200px;
+        border-radius: 15px;
+        .player__waves{
+            @include basic_flex (flex, flex-start, stretch, column);
+            padding: 12px;
+            .player__box{
+                background-color: yellow;
+                justify-self: flex-start;
+                height: 30px;
+                width: 10%;
+                border: 1px solid black;
+            }
+            .player1{
+                @extend %animaciones;
+                @include player_animacion (0s, 5s, rgb(12, 230, 211), rgb(44, 94, 204), rgb(0, 0, 255));
+            }
+            .player2{
+                @extend %animaciones;
+                @include player_animacion (.5s, 5s, rgb(216, 164, 236), rgb(169, 53, 223), rgb(111, 0, 255));
+            }
+            .player3{
+                @extend %animaciones;
+                @include player_animacion (.7s, 4s, rgb(255, 159, 242), rgb(233, 123, 215), rgb(241, 90, 209));
+            }
+            .player4{
+                @extend %animaciones;
+                @include player_animacion (.3s, 4.5s, rgb(236, 119, 135), rgb(236, 48, 74), rgb(255, 136, 0));
+            }
+            .player5{
+                @extend %animaciones;
+                @include player_animacion (.1s, 4s, rgb(228, 189, 107), rgb(255, 253, 138), rgb(255, 251, 0));
+            }
+            .player6{
+                @extend %animaciones;
+                @include player_animacion (.4s, 5s, rgb(216, 255, 110), rgb(176, 255, 123), rgb(145, 255, 0));
+            }
+        }
+        .player__music{
+            color: map-get($colores, color-texto-dark);
+            padding: 15px;
+            @include basic_flex (flex, center, center, row);
+            padding: 0;
+            .music{
+                width: 100%;
+                audio{
+                    width: 90%;
+                    margin: auto;
+                }
+            }
+        }
+    }
+    .contenido_adicional{
+        .btn{
+            background-color: map-get($colores, color-principal);
+            margin-bottom: 1%;
+            &:hover{
+                background-color: map-get($colores, color-secundario);
+            }
+        }
+    }
+}

@@ -1,0 +1,25 @@
+@import 'base/generales';
+@import 'base/variables';
+
+@import 'utilities/mixin';
+@import 'utilities/maps';
+@import 'utilities/extends';
+@import 'utilities/bucles';
+@import 'utilities/keyframes';
+
+@import 'componentes/header';
+
+@import 'pages/index';
+@import 'pages/radio';
+@import 'pages/about';
+@import 'pages/projects';
+@import 'pages/servicios';
+
+@import 'componentes/contact';
+@import 'componentes/datos';
+@import 'componentes/footer';
+
+
+
+@import 'utilities/condicionales';
+@import 'query/query'

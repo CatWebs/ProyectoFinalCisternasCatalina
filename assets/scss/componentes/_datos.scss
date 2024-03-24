@@ -1,0 +1,30 @@
+#datos{
+    background-color: map-get($colores, color-fondo);
+    padding: 70px 20px;
+    .datos_row{
+        .datos__textos{
+            color: map-get($colores, color-texto-light);
+            padding: 15px;
+            text-align: center;
+            h3{
+                border-bottom: 2px solid map-get($colores, color-rosa);
+                padding-bottom: 15px;
+                margin-bottom: 40px;
+            }
+            p{
+                i{
+                    margin-right: 7px;
+                }
+            }
+        }
+        .datos__img{
+            @include basic_flex (flex, center, center, row);
+            margin: auto;
+            img{
+                max-height: 200px;
+                border-radius: 50%;
+                box-shadow: 0 0 12px map-get($colores, color-rosa); 
+            }
+        }
+    }
+}

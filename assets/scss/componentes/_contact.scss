@@ -1,0 +1,74 @@
+#contact{
+    background-color: map-get($colores, color-fondo);
+    padding: 40px 0;
+    .mail__container{
+        margin: 0 auto;
+        @include basic_flex (flex, space-between, center, row); 
+        flex-wrap: wrap;
+        border: 14px solid map-get($colores, color-rosa);
+        outline: 3px solid map-get($colores, color-secundario);
+        min-width: 320px;
+        max-width: 1200px;
+        form{
+            width: 100%;
+            min-width: 300px;
+            text-align: center;
+            flex: 1;
+            padding: 20px;
+            order: 5;
+            .form__input{
+                width: 100%;
+                padding: 7px;
+                margin: 6px 0;
+                border: none;
+                border-bottom: 3px solid map-get($colores, color-principal);
+                background: transparent;
+                color: map-get($colores, color-texto-light);
+                &:focus{
+                    background: linear-gradient(to bottom, transparent, map-get($colores, color-secundario));
+                    outline: none;
+                    border-bottom: 3px solid map-get($colores, color-secundario);
+                }
+            }
+            textarea{
+                min-height: 140px;
+                resize: none;
+            }
+            input[type="submit"]{
+                background-color: map-get($colores, color-principal) ;
+                color: map-get($colores, color-texto-dark);
+                border-bottom: none;
+                padding:12px;
+                transition: all .5s;
+                &:hover{
+                    background-color: map-get($colores, color-secundario);
+                }
+            }
+
+        }
+        .form__img{
+            flex: 1;
+            display: flex;
+            padding: 10px;
+            min-width: 200px;
+            max-width: 400px;
+            order:2;
+            .mail__img{
+                margin: auto;
+                padding: 10px;
+                .mail__img__box{
+                    text-align: center;
+                    padding: 0;
+                    margin: auto;
+                    img{
+                        border-radius: 50%;
+                        width: 100%;
+                        margin: auto;
+                        max-width: 300px;
+                    }
+                }
+            }
+        }
+    }
+}
+

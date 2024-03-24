@@ -1,0 +1,52 @@
+#main_index{
+    background-color: map-get($colores, color-fondo);
+    color: map-get($colores, color-texto-light);
+    padding: 40px 20px;
+    border-top: 3px solid map-get($colores, color-secundario);
+    text-align: center;
+    h1{
+        text-shadow: 3px 4px 7px map-get($colores, color-secundario);
+    }
+    .container-carrusel{
+        max-width: 500px;
+        margin: 30px auto;
+    }
+    .articulos{
+        padding: 30px 80px;
+        background-color: map-get($colores, color-principal);
+        border-radius: 15px;
+        max-width: 1200px;
+        margin: auto;
+        h2{
+            font-size: 22px;
+            color: map-get($colores, color-principal);
+            border-radius: 15px;
+            background-color: map-get($colores, color-fondo);
+            text-shadow: 3px 4px 7px map-get($colores, color-texto-dark);
+            border: 2px solid map-get($colores, color-rosa);
+            padding: 10px;
+        }
+        .accordion-item{
+            border-radius: 15px;
+            .accordion-header{
+                .accordion-button{
+                    border-radius: 15px;
+                    background-color: $background-basic;
+                    font-size: 22px;
+                }
+            }
+            .accordion-collapse{
+                font-size: 20px;
+                a{
+                    color: map-get($colores, color-secundario);
+                    text-decoration: none;
+                    font-weight: bolder;
+                    &:hover{
+                        color: map-get($colores, color-rosa);
+                    }
+                }
+            }
+        }
+    }
+}
+

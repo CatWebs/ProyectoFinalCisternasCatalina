@@ -1,0 +1,17 @@
+@keyframes animacion_radio_player{
+    0%{
+        width: 0%;
+    }
+    25%{
+        width: 50%;
+    }
+    50%{
+        width: 100%;
+    }
+    75%{
+        width: 50%;
+    }
+    100%{
+        width: 0%;
+    }
+}

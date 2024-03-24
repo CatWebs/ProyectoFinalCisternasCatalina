@@ -1,0 +1,66 @@
+header{
+    background-color: map-get($colores, color-principal);
+    height: 70px;
+    @include basic_flex (flex, space-between, center, row); 
+    .logotipo{
+        img{
+            height: 50px;
+            width: auto;
+            border-radius: 10px;
+            transition: all 0.7s;
+            margin-left: 20px;
+            &:hover{
+                transform: scale(1.15);
+                cursor: pointer;
+            }
+        }
+    }
+    .nav__menu{
+        .nav__links{
+            @include basic_flex (flex, space-around, flex-end, row);
+            list-style: none;
+            margin: auto;
+            font-weight: bolder;
+            font-size: 18px;
+            li{
+                padding: 0 12px;
+                a{
+                    color: map-get($colores, color-texto-dark); 
+                    text-decoration: none;
+                    transition: all 0.5s;
+                    &:hover{
+                        color: map-get($colores, color-secundario);
+                        transform: scale(1.15);
+                    }
+                }
+            }
+        }
+    }
+    .dropdown{
+        button{
+            margin-right: 20px;
+            border: 1px solid map-get($colores, color-secundario) ;
+            font-weight: bolder;
+            font-size: 18px;
+            &:hover{
+                background-color: map-get($colores, color-secundario);
+            }
+        }
+        .dropdown-menu{
+            li{
+                a{
+                    color: map-get($colores, color-texto-dark);
+                    &:hover{
+                        color: map-get($colores, color-secundario);
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+

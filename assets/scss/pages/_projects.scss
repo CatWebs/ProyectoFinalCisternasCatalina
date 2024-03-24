@@ -1,0 +1,97 @@
+/*Sección principal - Main*/
+
+#projects{
+    background-color: map-get($colores, color-fondo);
+    color: map-get($colores, color-texto-light);
+    padding: 40px 20px;
+    border-top: 3px solid map-get($colores, color-secundario);
+    text-align: center;
+    width: 100%;
+    h1{
+        text-shadow: 3px 4px 7px map-get($colores, color-texto-light);
+        padding-bottom: 40px;
+    } 
+    .proyectos{
+        .proyectos__proyecto{
+            padding: 25px;
+            margin-top: 50px; 
+            .proyecto__img{
+                width: 80%;
+                height: 250px;
+                margin: 0 auto;
+                background-color: map-get($colores, color-rosa);
+                border-radius: 15px;
+                transition: all 1s;
+                box-shadow: map-get($colores, color-principal) 0px 3px 20px;
+                position: relative;
+                img{
+                    height: 100%;
+                    width: 100%;
+                    object-fit: cover;
+                    border-radius: 15px;
+                }
+                .proyecto__info{ 
+                    background-color: map-get($colores, color-fondo);
+                    opacity: .7;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    height: 100%;
+                    width: 0%;
+                    border-radius: 15px;
+                    @include basic_flex (flex, center, center, row);
+                    overflow: hidden;
+                    transition: 1s all;
+                    h2{
+                        color: map-get($colores, color-texto-light);
+                        text-shadow: 5px 10px 10px map-get($colores, color-texto-dark);
+                        font-size: 22px;
+                        font-weight: bolder;
+                        text-transform: uppercase;
+                    }
+                }
+                &:hover{
+                    cursor: pointer;
+                    .proyecto__info{
+                        width: 100%;
+                    }
+                }  
+            }  
+        }
+    }
+}
+
+/*Sección de galería*/
+
+.galeria-paisajes{
+    border: 3px solid #000;
+    background-color: map-get($colores, color-secundario);
+    padding: 2%;
+    h2{
+        text-align: center;  
+        padding: 20px;
+        text-shadow: 0 0 10px #000; 
+        color: #fff;
+        font-weight: lighter;
+    }
+    .paisajes-container{
+        width: 96%;
+        margin: auto;
+        height: auto;
+        background-color: rgb(173, 206, 195);
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(8, 200px);
+        padding: 20px;
+        grid-gap: 20px;
+        box-shadow: 0 0 10px #fff;
+        .paisajes{
+            border: 1px solid black;
+            border-radius: 10px;
+            box-shadow: 0 0 10px #000;
+            background-size: cover;
+            background-position: center;
+        }
+    }
+}
+

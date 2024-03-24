@@ -1,0 +1,13 @@
+@mixin basic_flex ($display, $justify, $align, $direction){		
+    display: $display;
+    justify-content: $justify;
+    align-items: $align;
+    flex-direction: $direction;
+}		
+
+@mixin player_animacion ($delay, $duracion, $color1, $color2, $color3){
+    animation-delay: $delay;
+    animation-duration: $duracion;
+    background: linear-gradient(to right, $color1, $color2,  $color3, transparent);
+}
+

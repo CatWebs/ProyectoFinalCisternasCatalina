@@ -1,0 +1,49 @@
+#main__about{
+    background-color: map-get($colores, color-rosa);
+    color: map-get($colores, color-texto-dark);
+    padding: 40px 20px;
+    border-top: 3px solid map-get($colores, color-fondo);
+    text-align: center;
+    h1{
+        text-shadow: 3px 4px 7px map-get($colores, color-texto-dark);
+    }
+    .about__section{
+        background-color: $background-basic;
+        border-radius: 15px;
+        border: 1px solid map-get($colores, color-texto-dark);
+        margin: 20px auto;
+        max-width: 1200px;
+        .about__text{
+            color: map-get($colores, color-texto-dark);
+            padding: 15px;
+            text-align: justify;
+            h3{
+                border-bottom: 2px solid map-get($colores, color-rosa);
+                padding-bottom: 15px;
+                margin-bottom: 40px;
+                text-align: center;
+            }
+            p{
+                span{
+                    color: map-get($colores, color-rosa);
+                }
+                a{
+                    text-decoration: none;
+                    color: map-get($colores, color-rosa);
+                    &:hover{
+                        color: map-get($colores, color-secundario)
+                    }
+                }
+            }
+        }
+        .about__img__container{
+           padding:20px;
+           margin: auto;
+           border-radius: 15px;
+           img{
+            border-radius: 15px;
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+           } 
+        }
+    }
+}
