@@ -99,18 +99,18 @@ header .dropdown .dropdown-menu li a:hover {
   text-align: center;
 }
 #main_index h1 {
-  text-shadow: 3px 4px 7px #6a5acd;
+  font-size: 38px;
 }
 #main_index .container-carrusel {
-  max-width: 500px;
+  max-width: 350px;
   margin: 30px auto;
 }
 #main_index .articulos {
-  padding: 30px 80px;
+  padding: 30px 30px;
   background-color: #87ceeb;
   border-radius: 15px;
   max-width: 1200px;
-  margin: auto;
+  margin: 25px auto;
 }
 #main_index .articulos h2 {
   font-size: 22px;
