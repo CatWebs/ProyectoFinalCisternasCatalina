@@ -11,6 +11,12 @@
                 padding-bottom: 15px;
                 margin-bottom: 40px;
             }
+            h5{
+                border-bottom: 2px solid map-get($colores, color-rosa);
+                padding-bottom: 15px;
+                margin-bottom: 40px;
+                font-size: 26px;
+            }
             p{
                 i{
                     margin-right: 7px;
