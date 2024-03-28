@@ -255,13 +255,21 @@ header .dropdown .dropdown-menu li a:hover {
   text-align: center;
 }
 #main__about h1 {
-  text-shadow: 3px 4px 7px #000;
+  padding: 20px 0;
+  background-color: #fff;
+  border-radius: 15px;
+  border: 1px solid #000;
+  max-width: 1200px;
+  margin: auto;
+}
+#main__about h2 {
+  margin-top: 25px;
 }
 #main__about .about__section {
   background-color: #fff;
   border-radius: 15px;
   border: 1px solid #000;
-  margin: 20px auto;
+  margin: 30px auto;
   max-width: 1200px;
 }
 #main__about .about__section .about__text {
