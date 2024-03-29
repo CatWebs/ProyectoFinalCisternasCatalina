@@ -3,3 +3,12 @@
     animation-iteration-count: infinite;
     animation-timing-function: linear;
 }
+
+
+%maqueta_about{
+    background-color: $background-basic;
+    border-radius: 15px;
+    border: 1px solid map-get($colores, color-texto-dark);
+    max-width: 1200px;
+    margin: 30px auto;
+}
