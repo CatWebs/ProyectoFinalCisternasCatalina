@@ -1,20 +1,29 @@
 /*Sección principal - Main*/
 
 #projects{
-    background-color: map-get($colores, color-fondo);
-    color: map-get($colores, color-texto-light);
-    padding: 40px 20px;
-    border-top: 3px solid map-get($colores, color-secundario);
+    background-color: map-get($colores, color-texto-light);
+    color: map-get($colores, color-texto-dark);
+    padding: 40px 20px 90px;
+    border-top: 3px solid map-get($colores, color-texto-dark);
     text-align: center;
     width: 100%;
     h1{
-        text-shadow: 3px 4px 7px map-get($colores, color-texto-light);
-        padding-bottom: 40px;
-    } 
+        border-bottom: 3px solid map-get($colores, color-texto-dark);
+        margin-bottom: 20px;
+        padding-bottom: 20px;
+        font-weight: bolder;
+        text-transform: uppercase;
+        font-size: 40px;
+    }
+    h2{
+        margin-bottom: 40px;
+    }
     .proyectos{
+        background-color: map-get($colores, color-fondo);
+        border-radius: 15px;
+        padding: 40px 0;
         .proyectos__proyecto{
-            padding: 25px;
-            margin-top: 50px; 
+            padding: 15px 0; 
             .proyecto__img{
                 width: 80%;
                 height: 250px;
@@ -31,7 +40,7 @@
                     border-radius: 15px;
                 }
                 .proyecto__info{ 
-                    background-color: map-get($colores, color-fondo);
+                    background-color: map-get($colores, color-principal);
                     opacity: .7;
                     position: absolute;
                     top: 0;
@@ -43,8 +52,7 @@
                     overflow: hidden;
                     transition: 1s all;
                     h2{
-                        color: map-get($colores, color-texto-light);
-                        text-shadow: 5px 10px 10px map-get($colores, color-texto-dark);
+                        color: map-get($colores, color-texto-dark);
                         font-size: 22px;
                         font-weight: bolder;
                         text-transform: uppercase;
@@ -64,21 +72,19 @@
 /*Sección de galería*/
 
 .galeria-paisajes{
-    border: 3px solid #000;
-    background-color: map-get($colores, color-secundario);
+    background-color: map-get($colores, color-fondo);
     padding: 2%;
     h2{
-        text-align: center;  
-        padding: 20px;
-        text-shadow: 0 0 10px #000; 
-        color: #fff;
+        text-align: center;
+        color: map-get($colores, color-texto-light);  
+        padding: 20px; 
         font-weight: lighter;
     }
     .paisajes-container{
         width: 96%;
         margin: auto;
         height: auto;
-        background-color: rgb(173, 206, 195);
+        background-color: map-get($colores, color-principal);
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: repeat(8, 200px);
