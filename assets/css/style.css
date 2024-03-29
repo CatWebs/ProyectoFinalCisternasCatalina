@@ -150,14 +150,12 @@ header .dropdown .dropdown-menu li a:hover {
 }
 
 #radio_main {
-  background: linear-gradient(to bottom, #0c0909, #6a5acd, #0c0909);
-  color: #fff;
   padding: 40px 20px;
-  border-top: 3px solid #fff;
+  border-top: 3px solid #6a5acd;
   text-align: center;
 }
 #radio_main h1 {
-  text-shadow: 3px 4px 7px #000;
+  text-shadow: 3px 4px 7px #87ceeb;
   margin: 20px auto;
   letter-spacing: 10px;
 }
@@ -167,18 +165,17 @@ header .dropdown .dropdown-menu li a:hover {
 }
 #radio_main h4 {
   padding: 25px 0 40px;
-  color: #fff;
-  border-top: 2px solid #ffc0cb;
+  border-top: 2px solid #87ceeb;
   font-size: 45px;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 #radio_main h4 a {
   text-decoration: none;
   font-weight: bolder;
-  color: #fff;
+  color: #87ceeb;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 #radio_main h4 a:hover {
-  color: #ffc0cb;
+  color: #6a5acd;
 }
 #radio_main .player {
   background-color: #0c0909;
@@ -247,11 +244,14 @@ header .dropdown .dropdown-menu li a:hover {
   width: 90%;
   margin: auto;
 }
-#radio_main .contenido_adicional .btn {
+#radio_main .contenido_adicional .card {
+  box-shadow: #87ceeb 0px 3px 20px;
+}
+#radio_main .contenido_adicional .card .btn {
   background-color: #87ceeb;
   margin-bottom: 1%;
 }
-#radio_main .contenido_adicional .btn:hover {
+#radio_main .contenido_adicional .card .btn:hover {
   background-color: #6a5acd;
 }
 
